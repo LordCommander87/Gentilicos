@@ -1,14 +1,18 @@
 <ion-header>
-  
+
 </ion-header>
 
 <ion-content class="qwerty" padding>
+
+  <button ion-button color="light">
+    <ion-icon color="rebeccapurple" name="albums" (click)="exibirRecordes()"></ion-icon>
+  </button>
  
-  <label> Gentílicos </label>
+  <label class="gentil"> Gentílicos </label>
 
   <div class="botoes">
-    <button ion-button color="secondary" block round (click)="iniciarApp()">Iniciar</button><br>
-    <button ion-button color="secondary" block round (click)="exibirCreditos()">Créditos</button><br>
-    <button ion-button color="secondary" block round (click)="exitApp()">Sair</button>
+    <button ion-button color="light" block round (click)="iniciarApp()"> <label class="purple"> Iniciar </label> </button><br>
+    <button ion-button color="light" block round (click)="exibirCreditos()"> <label class="purple"> Créditos </label> </button><br>
+    <button ion-button color="light" block round (click)="exitApp()"> <label class="purple"> Sair </label> </button>
   </div>
 </ion-content>

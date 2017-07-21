@@ -4,6 +4,7 @@ import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { Room } from '../room/room';
+import { Records } from '../records/records';
 
 @Component({
   selector: 'page-home',
@@ -15,6 +16,10 @@ export class HomePage {
   constructor(public  navCtrl  : NavController  , public platform : Platform, 
               private toastCtrl: ToastController, public navParams: NavParams, 
               private alertCtrl: AlertController) {
+  }
+
+  exibirRecordes() {
+    this.navCtrl.push(Records);
   }
 
   exibirCreditos() {

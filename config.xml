@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.uvaformobile.gentilicos" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.uvaformobile.gentilicos" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Gentilicos</name>
   <description>Aprenda se divertindo</description>
-  <author email="hi@uvaformobiles" href="http://ionicframework.com/">UVA Team</author>
+  <author email="hi@uvaformobiles" href="https://github.com/LordCommander87/Gentilicos">UVA Team</author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://ionic.local/*"/>

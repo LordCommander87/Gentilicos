@@ -10,12 +10,22 @@ export class Questoes {
     this.indicesRetirados = [];
     this.questao = [];
 
-    this.PerguntasRespostas = ["Onde nasce o capixaba?"     , "Espírito Santo"   , "Onde nasce o potiguar?"     , "Rio Grande do Norte",
-                               "Onde nasce o cearense?"     , "Ceará"            , "Onde nasce o barriga-verde?", "Santa Catarina"     ,
-                               "Onde nasce o gaúcho?"       , "Rio Grande do Sul", "Onde nasce o candango?"     , "Distrito Federal"   ,
-                               "Onde nasce o fluminense?"   , "Rio de Janeiro"   , "Onde nasce o tingui?"       , "Piauí"              ,
-                               "Onde nasce o montanhês?"    , "Minas Gerais"     , "Onde nasce o bandeirante?"  , "São Paulo"          ,
-                               "Onde nasce o fortalezense?" , "Fortaleza"];
+    this.PerguntasRespostas = ["Onde nasce o capixaba?"       , "Espírito Santo"    , "Onde nasce o potiguar?"        , "Rio Grande do Norte",
+                               "Onde nasce o cearense?"       , "Ceará"             , "Onde nasce o barriga-verde?"   , "Santa Catarina"     ,
+                               "Onde nasce o gaúcho?"         , "Rio Grande do Sul" , "Onde nasce o candango?"        , "Distrito Federal"   ,
+                               "Onde nasce o fluminense?"     , "Rio de Janeiro"    , "Onde nasce o tingui?"          , "Piauí"              ,
+                               "Onde nasce o montanhês?"      , "Minas Gerais"      , "Onde nasce o bandeirante?"     , "São Paulo"          ,
+                               "Onde nasce o fortalezense?"   , "Fortaleza"         , "Onde nasce o rio-branquense?"  , "Rio Branco"         ,
+                               "Onde nasce o maceioense?  "   , "Maceió"            , "Onde nasce o macapaense?"      , "Macapá"             ,
+                               "Onde nasce o manauara?"       , "Manaus"            , "Onde nasce o soteropolitano?"  , "Salvador"           ,
+                               "Onde nasce o vitoriense?"     , "Vitória"           , "Onde nasce o goianiense?"      , "Goiânia"            ,
+                               "Onde nasce o ludovicense?"    , "São Luís"          , "Onde nasce o cuiabano?"        , "Cuiabá"             ,
+                               "Onde nasce o belenense?"      , "Belém"             , "Onde nasce o campo-grandense?" , "Campo Grande"       ,
+                               "Onde nasce o pessoense?"      , "João Pessoa"       , "Onde nasce o recifense?"       , "Recife"             ,
+                               "Onde nasce o teresinense?"    , "Teresina"          , "Onde nasce o papa-jerimum?"    , "Natal"              ,
+                               "Onde nasce o porto-velhense?" , "Porto Velho"       , "Onde nasce o palmense?"        , "Palmas"             ,
+                               "Onde nasce o aracajuano?"     , "Aracaju"           , "Onde nasce o caucaiense?"      , "Caucaia"            ,
+                               "Onde nasce o juazeirense?"    , "Juazeiro do Norte" , "Onde nasce o santista?"        , "Santos"              ];
 
     for (let i = 0; i < this.PerguntasRespostas.length; i = i + 2) {
       this.perguntas.push({

@@ -4,6 +4,8 @@ import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { Questoes } from '../../costas/questoes';
 import { HomePage } from '../home/home';
 
+import { Database } from '../../costas/databasePT';
+
 @Component({
   selector: 'page-room',
   templateUrl: 'room.html',
@@ -11,6 +13,7 @@ import { HomePage } from '../home/home';
 
 export class Room {
 
+  private database  : Database;
   private questoes  : Questoes;
   private nome      : string;
   private pontos    : number;
@@ -20,11 +23,20 @@ export class Room {
   private respostas : Array<String> = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
+    this.database = new Database(() => {
+      console.log("Tabela Acessada em Room");
+    });
     this.nome = navParams.get('nome').nome;
     console.log(this.nome);
     this.questoes = new Questoes();
     this.proximaPergunta();
     this.pontos = 0;
+  }
+
+  inserirRecorde(recorde: any): void {
+    this.database.inserirPontos(recorde, () => {
+      console.log("Recorde Inserido");
+    });
   }
 
   randomizarRespostas() : void {
@@ -75,7 +87,12 @@ export class Room {
     ]
     });
     alert.present();
-    //this.atualizarBanco();
+
+    //atualizarBanco
+    if(this.pontos != 0){
+      this.inserirRecorde({nome: this.nome, pontos: this.pontos});
+    }
+
     alert.onDidDismiss(() => {
       this.navCtrl.setRoot(HomePage);
     });
