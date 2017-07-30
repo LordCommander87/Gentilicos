@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.uvaformobile.gentilicos" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Gentilicos</name>
+  <name>Gentílicos</name>
   <description>Aprenda se divertindo</description>
   <author email="hi@uvaformobiles" href="https://github.com/LordCommander87/Gentilicos">UVA Team</author>
   <content src="index.html"/>
@@ -18,10 +18,22 @@
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashMaintainAspectRatio" value="true"/>
-  <preference name="FadeSplashScreenDuration" value="300"/>
-  <preference name="SplashShowOnlyFirstTime" value="false"/>
-  <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="3000"/>
+  <!-- <preference name="FadeSplashScreenDuration" value="300"/> -->
+  <!-- <preference name="SplashShowOnlyFirstTime" value="false"/> -->
+  <!-- <preference name="SplashScreen" value="screen"/> -->
+  <!-- <preference name="SplashScreenDelay" value="3000"/> -->
+  <preference name="orientation" value="portrait" />
+
+  <!-- Testando tela branca -->
+  <preference name="AutoHideSplashScreen" value="false" />
+  <preference name="SplashScreenDelay" value="5000" />
+  <preference name="FadeSplashScreenDuration" value="1000" />
+  <preference name="SplashScreen" value="screen" />
+  <preference name="ShowSplashScreen" value="true" />
+  <preference name="ShowSplashScreenSpinner" value="false" />
+  <preference name="SplashShowOnlyFirstTime" value="false" />
+  <preference name="FadeSplashScreen" value="true" />
+
   <platform name="android">
     <allow-intent href="market:*"/>
     <splash src="resources\android\splash\drawable-land-ldpi-screen.png" density="land-ldpi"/>
